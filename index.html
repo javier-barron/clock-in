@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock-In</title>
+  </head>
+  <body>
+    <div>
+      <div>Your time is:<p id="time"></p></div>
+      <div>Your latitude is:<p id="latitude"></p></div>
+      <div>Your longitude is:<p id="longitude"></p></div>
+    </div>
+    <br />
+    <form>
+      <fieldset>
+        <legend>Data sending options:</legend>
+        <div>
+          <input type="radio" id="only-time" name="gps" value="only-time" checked>
+          <label for="only-time">Only time</label>
+        </div>
+        <div>
+          <input type="radio" id="gps-optional" name="gps" value="gps-optional">
+          <label for="gps-optional">GPS Optional</label>
+        </div>
+        <div>
+          <input type="radio" id="gps-required" name="gps" value="gps-required">
+          <label for="gps-required">GPS Required</label>
+        </div>
+      </fieldset>
+    </br>
+      <div>
+        <button id="sent">Send Data</button>
+      </div>
+    </form>
+    </br>
+    <pre id="log"></pre>
+    
+    <script src="./js/main.js"></script>
+  </body>
+</html>
